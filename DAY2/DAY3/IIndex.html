@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <br>
+        <input type="radio" id="gender-male" name="gender" value="male" required>
+        <label for="gender-male">Male</label>
+        <br>
+        <input type="radio" id="gender-female" name="gender" value="female" required>
+        <label for="gender-female">Female</label>
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+        </select>
+        <br><br>
+        <label>Skills:</label>
+        <br>
+        <input type="checkbox" id="skill-html" name="skills" value="html">
+        <label for="skill-html">HTML</label>
+        <br>
+        <input type="checkbox" id="skill-css" name="skills" value="css">
+        <label for="skill-css">CSS</label>
+        <br>
+        <input type="checkbox" id="skill-js" name="skills" value="javascript">
+        <label for="skill-js">JavaScript</label>
+        <br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
+        <br><br>
+        <label for="file-upload">Upload File:</label>
+        <input type="file" id="file-upload" name="file-upload" accept=".jpg,.jpeg,.png,.pdf"><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+      
+</body>
+</html>
